@@ -1,0 +1,52 @@
+services:
+    evo.commandecli.generatecommand:
+        class: Evo\CommandeCli\Command\GenerateCommand
+        arguments:
+            - '@evo.commandecli.filemanager'
+            - '@evo.commandecli.codegenerator'
+        tags:
+            - { name: 'console.command' }
+
+    evo.commandecli.filemanager:
+        class: Evo\CommandeCli\Service\FileManager
+
+    evo.commandecli.codegenerator:
+        class: Evo\CommandeCli\Service\CodeGenerator
+        arguments:
+            - '@evo.commandecli.presenter_methods_generator'
+            - '@evo.commandecli.service_methods_generator'
+            - '@evo.commandecli.controller_methods_generator'
+            - '@evo.commandecli.entity_methods_generator'
+            - '@evo.commandecli.form_handler_methods_generator'
+            - '@evo.commandecli.form_provider_methods_generator'
+            - '@evo.commandecli.form_type_methods_generator'
+            - '@evo.commandecli.helper_methods_generator'
+            - '@evo.commandecli.repository_methods_generator'
+            - '@evo.commandecli.filemanager'
+
+    evo.commandecli.presenter_methods_generator:
+        class: Evo\CommandeCli\Generator\PresenterMethodsGenerator
+
+    evo.commandecli.service_methods_generator:
+        class: Evo\CommandeCli\Generator\ServiceMethodsGenerator
+
+    evo.commandecli.controller_methods_generator:
+        class: Evo\CommandeCli\Generator\ControllerMethodsGenerator
+
+    evo.commandecli.entity_methods_generator:
+        class: Evo\CommandeCli\Generator\EntityMethodsGenerator
+
+    evo.commandecli.form_handler_methods_generator:
+        class: Evo\CommandeCli\Generator\FormHandlerMethodsGenerator
+
+    evo.commandecli.form_provider_methods_generator:
+        class: Evo\CommandeCli\Generator\FormProviderMethodsGenerator
+
+    evo.commandecli.form_type_methods_generator:
+        class: Evo\CommandeCli\Generator\FormTypeMethodsGenerator
+
+    evo.commandecli.helper_methods_generator:
+        class: Evo\CommandeCli\Generator\HelperMethodsGenerator
+
+    evo.commandecli.repository_methods_generator:
+        class: Evo\CommandeCli\Generator\RepositoryMethodsGenerator
