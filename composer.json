@@ -10,6 +10,7 @@
     },
     "require": {
         "symfony/console": "^5.0",
-        "symfony/filesystem": "^5.0"
+        "symfony/filesystem": "^5.0",
+        "splitbrain/php-cli": "^1.3"
     }
 }
