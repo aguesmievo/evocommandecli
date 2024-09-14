@@ -1,5 +1,5 @@
 {
-    "name": "evo/commande-cli",
+    "name": "evolutive/commande-cli",
     "description": "A Symfony CLI generator for PrestaShop modules",
     "type": "library",
     "autoload": {
