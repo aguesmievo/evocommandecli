@@ -1,6 +1,6 @@
 <?php 
 
-namespace Evo\CommandeCli\Generator;
+namespace Evolutive\CommandeCli\Generator;
 
 use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\QueryBuilder;

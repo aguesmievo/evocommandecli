@@ -1,6 +1,6 @@
 <?php 
 
-namespace Evo\CommandeCli\Generator;
+namespace Evolutive\CommandeCli\Generator;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

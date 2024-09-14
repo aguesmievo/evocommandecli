@@ -1,6 +1,6 @@
 <?php 
 
-namespace Evo\CommandeCli\Generator;
+namespace Evolutive\CommandeCli\Generator;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
